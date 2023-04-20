@@ -73,8 +73,6 @@ if len(sys.argv) < 2:
 
 inputFileName = sys.argv[1]
 if inputFileName.find(".sde") != -1:
-    MBToUAPPMode = True
     ConvertToUAPP(inputFileName)
 else:
-    MBToUAPPMode = False
     ConvertToMB(inputFileName)
